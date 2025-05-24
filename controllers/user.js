@@ -1,5 +1,5 @@
 const bcrypt = require('bcrypt');
-const db = require('../db'); // your db connection instance
+const db = require('../db/db'); // your db connection instance
 
 const registerUser = async (req, res) => {
   const { username, email, password, gender, age, telno, address } = req.body;
